@@ -133,9 +133,139 @@
 }
 
 
+.bloque {
+  padding: 4rem 0;
+  background: var(--fondo-claro);
+}
+
+.bloque__container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.bloque__contenido {
+  background: #fff;
+  border-radius: var(--radio-md);
+  box-shadow: var(--sombra-suave);
+  padding: 2rem;
+}
+
+.bloque__titulo {
+  font-size: 1.2rem;
+  color: var(--azul-oscuro); /* o verde si ya cambiaste */
+  margin-bottom: 0.5rem;
+}
+
+.bloque__lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.bloque__lista li {
+  position: relative;
+  padding-left: 1.8rem;
+  margin-bottom: 1.2rem;
+}
+
+.bloque__lista li::before {
+  content: "🔹";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  color: var(--verde-acento);
+  font-size: 0.85rem;
+}
+
+.bloque__lista li strong {
+  display: block;
+  font-weight: 600;
+  color: var(--verde-oscuro);
+  margin-bottom: 0.2rem;
+}
+
+.bloque__lista li p {
+  margin: 0;
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+.bloque__lista li {
+  border-bottom: 1px solid var(--gris-borde);
+  padding-bottom: 0.8rem;
+}
+
+.bloque__lista li:last-child {
+  border-bottom: none;
+}
+
+.dual {
+  padding: 4rem 0;
+  background: var(--fondo-claro);
+}
+
+.dual__container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1rem;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.dual__item {
+  background: #fff;
+  border-radius: var(--radio-md);
+  box-shadow: var(--sombra-suave);
+  padding: 1.8rem;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.dual__item:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--sombra-media);
+}
+
+.dual__item h3 {
+  font-size: 1.1rem;
+  color: var(--verde-oscuro);
+  margin-bottom: 0.5rem;
+}
+
+.dual__item p {
+  font-size: 0.85rem;
+  opacity: 0.8;
+  line-height: 1.5;
+}
 
 
+.footer {
+  background: var(--verde-oscuro);
+  color: #fff;
+  padding: 2rem 1rem;
+  text-align: center;
+}
 
+.footer p {
+  margin: 0;
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+/* .footer a {
+  color: var(--verde-acento);
+  text-decoration: none;
+  margin: 0 0.5rem;
+  font-size: 0.85rem;
+  transition: opacity .2s ease;
+}
+
+.footer a:hover {
+  opacity: 0.7;
+}
+ */
 
 /* RESPONSIVE */
 
@@ -160,6 +290,12 @@
 
 @media (max-width: 768px) {
   .features__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .dual__container {
     grid-template-columns: 1fr;
   }
 }
