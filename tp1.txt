@@ -1,0 +1,39 @@
+Investiga, contesta y completa las siguientes consigas….
+1• ¿Qué se entiende por comunicación?
+
+
+2• ¿Cuándo puedo darme por conectado? ¿Por qué?
+
+
+3• ¿Qué es Internet?
+
+
+4• ¿Qué elementos son necesarios para conectarse a Internet?
+
+🟣un dispositivo terminal (computadora, móvil), un módem/router para gestionar la señal, 
+un proveedor de servicios de internet (ISP), cables de red o tecnología inalámbrica (Wi-Fi), y un navegador web
+🔹dispositivo de usuario **
+🔹proveedor de servicio a Internet
+🔹modem **
+🔹router **
+🔹tarjeta red **
+🔹navergador web **
+🔹cable de red
+
+5• ¿Cómo funciona?
+
+
+6• ¿Cuáles son los proveedores del servicio de Internet en la ciudad? Dar
+nombres y características de los servicios que prestan o promocionan
+
+
+7• ¿Qué son los datos en informática? ¿Cómo se miden?
+
+
+8• ¿Qué relación tiene los Datos con Internet? Explica como se miden, cómo funcionan las señales.
+
+
+9• ¿Cómo se mide internet? Dar ejemplos y mencionar algunos sitios que se ´pueden utilizar.
+
+
+Realizar una presentación multimedia con la información.
