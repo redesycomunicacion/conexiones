@@ -3,38 +3,38 @@
 ===================================================== */
 
 :root {
-    /* Colores */
-    /*   --verde-oscuro: #1F6F5F;
-  --verde-medio: #2FA084;
-  --fondo-claro: #F9F5EB;
-  --gris-borde: #EEEEEE; */
 
-    --verde-oscuro: #0F3D3E; /* más profundo */
-    --verde-medio: #1F6F5F; /* tu actual */
-    --verde-acento: #79C7B7; /* más suave y moderno */
-    --fondo-claro: #F8FAFC; /* más neutro moderno */
+  --verde-oscuro: #0F3D3E;
+  --verde-medio: #1F6F5F;
+  --verde-acento: #79C7B7;
+  --fondo-claro: #F8FAFC;
 
-    /* Sombras */
-    --sombra-suave: 0 4px 12px rgba(0, 0, 0, .05);
-    --sombra-media: 0 10px 30px rgba(0, 0, 0, .06);
-    --sombra-fuerte: 0 20px 40px rgba(0, 0, 0, .15);
+  /* Sombras */
+  --sombra-suave: 0 4px 12px rgba(0, 0, 0, .05);
+  --sombra-media: 0 10px 30px rgba(0, 0, 0, .06);
+  --sombra-fuerte: 0 20px 40px rgba(0, 0, 0, .15);
 
-    /* Radios */
-    --radio-lg: 16px;
-    --radio-md: 14px;
-    --radio-pill: 999px;
+  /* Radios */
+  --radio-lg: 16px;
+  --radio-md: 14px;
+  --radio-pill: 999px;
 }
+
 
 
 /* =====================================================
    2. BASE
 ===================================================== */
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+body{
+  font-family: "Raleway", sans-serif;
+}
+
 
 /* =====================================================
    3. LAYOUT GENERAL
@@ -75,19 +75,21 @@
 }
 
 .descripcion {
-  font-size: 0.95rem;
+  font-size: 1rem;
   line-height: 1.6;
   max-width: 400px;
   margin-bottom: 1.5rem;
-  opacity: 0.85;
+
+  letter-spacing: 1.2px;
 }
 
 .frase {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-style: italic;
   opacity: 0.7;
-  border-left: 2px solid rgba(255,255,255,0.3);
+  border-left: 2px solid rgba(255, 255, 255, 0.3);
   padding-left: 10px;
+  letter-spacing: 1.2px;
 }
 
 .hero-img {
@@ -117,8 +119,14 @@
   border: 1px solid var(--gris-borde);
 }
 
-.features__container{
-    padding: 4rem 0;
+.feature__lista {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0 0;
+}
+
+.features__container {
+  padding: 4rem 0;
 }
 
 .feature:hover {
@@ -134,7 +142,7 @@
 
 
 .bloque {
-  padding: 4rem 0;
+  padding: 2rem 0;
   background: var(--fondo-claro);
 }
 
@@ -148,25 +156,28 @@
   background: #fff;
   border-radius: var(--radio-md);
   box-shadow: var(--sombra-suave);
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .bloque__titulo {
   font-size: 1.2rem;
-  color: var(--azul-oscuro); /* o verde si ya cambiaste */
+   color: var(--verde-oscuro);
   margin-bottom: 0.5rem;
 }
 
 .bloque__lista {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0 ;
 }
 
 .bloque__lista li {
   position: relative;
   padding-left: 1.8rem;
   margin-bottom: 1.2rem;
+
+  border-bottom: 1px solid var(--gris-borde);
+  padding-bottom: 0.8rem;
 }
 
 .bloque__lista li::before {
@@ -191,17 +202,12 @@
   opacity: 0.8;
 }
 
-.bloque__lista li {
-  border-bottom: 1px solid var(--gris-borde);
-  padding-bottom: 0.8rem;
-}
-
 .bloque__lista li:last-child {
   border-bottom: none;
 }
 
 .dual {
-  padding: 4rem 0;
+  padding: 2rem 0;
   background: var(--fondo-claro);
 }
 
