@@ -250,14 +250,23 @@ body{
 .footer {
   background: var(--verde-oscuro);
   color: #fff;
-  padding: 2rem 1rem;
+  padding: 3rem 1rem; /* Aumenté un poquito el padding arriba/abajo para que respire */
   text-align: center;
 }
 
 .footer p {
-  margin: 0;
-  font-size: 0.85rem;
-  opacity: 0.8;
+  margin-bottom: 0.5rem; /* Les damos un poquito de aire entre líneas */
+  font-size: 0.9rem;      /* Lo subí un pelín (de 0.85 a 0.9) para que los datos se lean mejor */
+  opacity: 0.9;          /* Menos transparencia para que destaque la info importante */
+}
+
+/* Para que el copyright se vea distinto a los datos de la facu */
+.footer .copyright {
+  margin-top: 1.5rem;
+  font-size: 0.75rem;
+  opacity: 0.6;
+  border-top: 1px solid rgba(255, 255, 255, 0.1); /* Una línea sutil separadora */
+  padding-top: 1rem;
 }
 
 /* .footer a {
