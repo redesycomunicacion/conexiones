@@ -257,13 +257,13 @@ body{
 }
 
 .dual__item p {
-  font-size: 1rem;
-  opacity: 0.8;
-  line-height: 1.5;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  opacity: 0.85;
 }
 
 
- .footer {
+.footer {
   background: var(--verde-oscuro);
   color: #fff;
   padding: 2rem 1rem;
